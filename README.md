@@ -23,7 +23,7 @@ To create MonoAPI token you need to visit Official [MonoAPI](https://api.monoban
 **JavaScript/TypeScript:**
 
 ```javascript
-const monoAPI = new MonoAPI('<you-token>');
+const monoAPI = new MonoAPI('<your-token>');
 
 const clientInfo = await monoAPI.fetchClientInfo();
 
@@ -39,4 +39,4 @@ const statements = await monoAPI.fetchStatements({
 
 ## Suggestion
 
-If you want to offer me to add new methods to this API, feel free to create issue
+If you want to offer me to add new methods to this API, feel free to create an issue.
