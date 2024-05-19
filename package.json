@@ -1,6 +1,6 @@
 {
   "name": "mono-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mono API? Mono",
   "main": "src/index.js",
   "types": "src/index.d.ts",
