@@ -1,0 +1,19 @@
+{
+  "name": "mono-api",
+  "version": "1.0.0",
+  "description": "Mono API? Mono",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5"
+  }
+}
