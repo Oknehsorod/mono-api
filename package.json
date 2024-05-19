@@ -3,10 +3,22 @@
   "version": "1.0.0",
   "description": "Mono API? Mono",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oknehsorod/mono-api"
+  },
+  "homepage": "https://github.com/Oknehsorod/mono-api#readme",
+  "keywords": [
+    "API",
+    "monobank",
+    "mono",
+    "typescript"
+  ],
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "Igor Doroshenko <oknehsorod@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.12",
