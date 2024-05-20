@@ -2,7 +2,10 @@ import {
   MonobankClientInfo,
   MonobankStatementPathParameters,
   MonobankStatements,
+  MonobankCurrencies,
 } from './types';
+
+export type * from './types';
 
 export class MonoAPI {
   constructor(token: string);
@@ -10,4 +13,5 @@ export class MonoAPI {
   fetchStatements: (
     pathParams: MonobankStatementPathParameters,
   ) => Promise<MonobankStatements>;
+  fetchCurrencies: () => Promise<MonobankCurrencies>;
 }

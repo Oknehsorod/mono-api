@@ -8,7 +8,7 @@
 
 ## Token Creation
 
-To create MonoAPI token you need to visit Official [MonoAPI](https://api.monobank.ua/index.html 'MonoAPI') page and create you token.
+To create MonoAPI token you need to visit Official [MonoAPI](https://api.monobank.ua/index.html 'MonoAPI') page and create your token.
 
 ## Install
 
@@ -35,6 +35,47 @@ const statements = await monoAPI.fetchStatements({
   from: oneWeekAgo,
   to: today,
 });
+```
+
+## Documentation
+**Fetch Client Information**
+```typescript
+import { MonoAPI, MonobankClientInfo } from 'mono-api';
+
+const monoAPI = new MonoAPI('<your-token>');
+
+const clientInfo: MonobankClientInfo = await monoAPI.fetchClientInfo();
+
+console.log('ClientInfo: ', clientInfo);
+```
+
+**Fetch Statements**
+```typescript
+import { MonoAPI, MonobankStatements } from 'mono-api';
+
+const monoAPI = new MonoAPI('<your-token>');
+
+const today = new Date();
+const oneWeekAgo = new Date(today);
+oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+
+const statements: MonobankStatements = await monoAPI.fetchStatements({
+	account: '0' // Or id of acccount
+	from: oneWeekAgo,
+	to: today
+});
+
+console.log('Statements: ', statements);
+```
+**Fetch Currencies**
+```typescript
+import { MonoAPI, MonobankCurrencies } from 'mono-api';
+
+const monoAPI = new MonoAPI(''); // For this method API Token can be omitted
+
+const currencies: MonobankCurrencies = await monoAPI.fetchCurrencies();
+
+console.log('Currencies: ', currencies);
 ```
 
 ## Suggestion

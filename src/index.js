@@ -25,6 +25,10 @@ class MonoAPI {
       `/personal/statement/${account}/${+from}/${+to}`,
     );
   }
+
+  fetchCurrencies() {
+    return this.fetchFromMonobankAPI('/bank/currency');
+  }
 }
 
 module.exports = {

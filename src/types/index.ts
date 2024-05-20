@@ -4,3 +4,4 @@ export type {
   MonobankStatements,
 } from './MonobankStatement';
 export type { MonobankClientInfo } from './MonobankClientInfo';
+export type { MonobankCurrencies, MonobankCurrency } from './MonobankCurrency';
